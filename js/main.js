@@ -185,18 +185,22 @@
 //About Me text animation
 async function init () {
     const node = document.querySelector("#type-text")
+    const request = new XMLHttpRequest();
+    request.open('GET', 'aboutme/aboutme.txt', false);
+    request.send();
+    const par1 = request.responseText;
 
     await sleep(1000)
     node.innerText = ""
-    await node.type('Hello, ')
+    await node.type(par1)
 
     while (true) {
-        await node.type(' there!')
+        await node.type(" there!")
         await sleep(2000)
         await node.delete(' there!')
-        await node.type('World!')
+        await node.type(' World!')
         await sleep(2000)
-        await node.delete('World!')
+        await node.delete(' World!')
     }
 }
 
@@ -210,14 +214,19 @@ class TypeAsync extends HTMLSpanElement {
 
     async type (text) {
         for (let character of text) {
-            this.innerText += character
+            console.log(character)
+            if(character == '|') {
+                this.innerHTML += '</br>';
+            } else {
+                this.innerHTML += character;
+            }
             await sleep(this.typeInterval)
         }
     }
 
     async delete (text) {
         for (let character of text) {
-            this.innerText = this.innerText.slice(0, this.innerText.length -1)
+            this.innerHTML = this.innerHTML.slice(0, this.innerHTML.length -1)
             await sleep(this.typeInterval)
         }
     }

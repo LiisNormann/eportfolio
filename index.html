@@ -35,8 +35,9 @@
                 <li><a class="nav-link" href="#header">Home</a></li>
                 <li><a class="nav-link" href="#about">About Me</a></li>
                 <li><a class="nav-link" href="#resume">Resume</a></li>
-                <li><a class="nav-link" href="#internship">Internship</a></li>
+                <!--<li><a class="nav-link" href="#internship">Internship</a></li>-->
                 <li><a class="nav-link" href="#portfolio">Projects</a></li>
+                <li><a class="nav-link" href="#knowledge">Acquired knowledge</a></li>
                 <li><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -63,9 +64,11 @@
         </div>
 
         <!-- About Me Text -->
-        <div class="row">
-            <span is="type-async" id="type-text">...</span>
-            <span class="blinking-cursor">_</span>
+        <div id="about-text" class="row">
+            <p>
+                <span is="type-async" id="type-text">...</span>
+                <span class="blinking-cursor">_</span>
+            </p>
         </div>
     </div>
 </section>
@@ -108,7 +111,7 @@
                             <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>26</span></li>
                             <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Psychology</span>
                             </li>
-                            <li><i class="bi bi-chevron-right"></i> <strong>E-mail:</strong> <span>liis.normann@gmail.com</span>
+                            <li><i class="bi bi-chevron-right"></i> <strong>E-mail:</strong> <span>liis.normann@voco.ee</span>
                             </li>
                         </ul>
                     </div>
@@ -195,7 +198,7 @@
                         <ul>
                             <li>Tartu, Estonia</li>
                             <li>+372 578 24 113</li>
-                            <li>liis.normann@gmail.com</li>
+                            <li>liis.normann@voco.ee</li>
                         </ul>
                         </p>
                     </div>
@@ -275,7 +278,7 @@
     </div>
 </section>
 
-<!-- Internship -->
+<!--&lt;!&ndash; Internship &ndash;&gt;
 <section id="internship" class="internship">
     <div class="container">
         <div class="section-title">
@@ -283,10 +286,187 @@
             <p>Nothing to show here .. YET.</p>
         </div>
     </div>
-</section>
+</section>-->
 
 <!-- Projects portfolio-->
 <section id="portfolio" class="portfolio">
+    <div class="container">
+        <div class="section-title">
+            <h2>Projects</h2>
+            <p>My crafting</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-app">Web</li>
+                    <li data-filter=".filter-card">Card</li>
+                    <li data-filter=".filter-web">MySQL</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                    <img src="img/portfolio/portfolio-10.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>E-store</h4>
+                        <p>App</p>
+                        <div class="portfolio-links">
+                            <a href="img/portfolio/portfolio-10.jpg" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                            <a href="#" data-gallery="portfolioDetailsGallery"
+                               data-glightbox="type: external" class="portfolio-details-lightbox"
+                               title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                    <img src="img/portfolio/portfolio-10.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Web 3</h4>
+                        <p>Web</p>
+                        <div class="portfolio-links">
+                            <a href="img/portfolio/portfolio-10.jpg" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                            <a href="#" data-gallery="portfolioDetailsGallery"
+                               data-glightbox="type: external" class="portfolio-details-lightbox"
+                               title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                    <img src="img/portfolio/portfolio-10.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>App 2</h4>
+                        <p>App</p>
+                        <div class="portfolio-links">
+                            <a href="img/portfolio/portfolio-10.jpg" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                            <a href="#" data-gallery="portfolioDetailsGallery"
+                               data-glightbox="type: external" class="portfolio-details-lightbox"
+                               title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                    <img src="img/portfolio/portfolio-10.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Card 2</h4>
+                        <p>Card</p>
+                        <div class="portfolio-links">
+                            <a href="img/portfolio/portfolio-10.jpg" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                            <a href="#" data-gallery="portfolioDetailsGallery"
+                               data-glightbox="type: external" class="portfolio-details-lightbox"
+                               title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                    <img src="img/portfolio/portfolio-10.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Web 2</h4>
+                        <p>Web</p>
+                        <div class="portfolio-links">
+                            <a href="img/portfolio/portfolio-10.jpg" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                            <a href="#" data-gallery="portfolioDetailsGallery"
+                               data-glightbox="type: external" class="portfolio-details-lightbox"
+                               title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                    <img src="img/portfolio/portfolio-10.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>App 3</h4>
+                        <p>App</p>
+                        <div class="portfolio-links">
+                            <a href="img/portfolio/portfolio-10.jpg" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                            <a href="#" data-gallery="portfolioDetailsGallery"
+                               data-glightbox="type: external" class="portfolio-details-lightbox"
+                               title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                    <img src="img/portfolio/portfolio-10.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Card 1</h4>
+                        <p>Card</p>
+                        <div class="portfolio-links">
+                            <a href="img/portfolio/portfolio-10.jpg" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                            <a href="#" data-gallery="portfolioDetailsGallery"
+                               data-glightbox="type: external" class="portfolio-details-lightbox"
+                               title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                    <img src="img/portfolio/portfolio-10.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Card 3</h4>
+                        <p>Card</p>
+                        <div class="portfolio-links">
+                            <a href="img/portfolio/portfolio-10.jpg" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                            <a href="#" data-gallery="portfolioDetailsGallery"
+                               data-glightbox="type: external" class="portfolio-details-lightbox"
+                               title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                    <img src="img/portfolio/portfolio-10.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Web 3</h4>
+                        <p>Web</p>
+                        <div class="portfolio-links">
+                            <a href="img/portfolio/portfolio-10.jpg" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                            <a href="#" data-gallery="portfolioDetailsGallery"
+                               data-glightbox="type: external" class="portfolio-details-lightbox"
+                               title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Acquired knowledge-->
+<section id="knowledge" class="portfolio">
     <div class="container">
         <div class="section-title">
             <h2>Projects</h2>
@@ -500,7 +680,7 @@
                 <div class="info-box">
                     <i class="bx bx-envelope"></i>
                     <h3>Email Me</h3>
-                    <p>liis.normann@gmail.com</p>
+                    <p>liis.normann@voco.ee</p>
                 </div>
             </div>
             <div class="col-md-6 mt-4 d-flex align-items-stretch">
