@@ -194,14 +194,14 @@ async function init () {
     node.innerText = ""
     await node.type(par1)
 
-    while (true) {
+    /*while (true) {
         await node.type(" there!")
         await sleep(2000)
         await node.delete(' there!')
         await node.type(' World!')
         await sleep(2000)
         await node.delete(' World!')
-    }
+    }*/
 }
 
 const sleep = time => new Promise(resolve => setTimeout(resolve, time))
