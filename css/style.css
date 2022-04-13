@@ -13,7 +13,6 @@ body {
     color: #fff;
     position: relative;
     background: transparent;
-    white-space: normal;
 }
 body::before {
     content: "";
@@ -335,6 +334,14 @@ section .container {
 }
 
 /* ABOUT ME */
+#about-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    line-height: 2rem;
+    text-align: justify;
+    white-space: normal;
+}
+
 .blinking-cursor {
     user-select: none;
     animation: blink 1s steps(2, start) infinite;
@@ -350,7 +357,7 @@ section .container {
 .details .content h3 {
     font-weight: 700;
     font-size: 26px;
-    color: #890000;
+    color: #A71A1A;
 }
 .details .content ul {
     list-style: none;
@@ -367,7 +374,7 @@ section .container {
 .details .content ul i {
     font-size: 16px;
     margin-right: 5px;
-    color: #890000;
+    color: #A71A1A;
     line-height: 0;
 }
 .details .content p:last-child {
@@ -413,7 +420,7 @@ section .container {
     transition: ease-in-out 0.3s;
 }
 .interests .icon-box i {
-    font-size: 32px;
+    font-size: 25px;
     padding-right: 10px;
     line-height: 1;
 }
@@ -422,7 +429,7 @@ section .container {
     margin: 0;
     padding: 0;
     line-height: 1;
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
 }
 .interests .icon-box:hover {
@@ -430,6 +437,10 @@ section .container {
 }
 
 /* Timeline */
+#resume-details {
+    margin-top: 50px;
+}
+
 .resume .resume-title {
     font-size: 26px;
     font-weight: 700;
@@ -449,7 +460,7 @@ section .container {
     font-weight: 600;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
-    color: #890000;
+    color: #A71A1A;
     margin-bottom: 10px;
 }
 .resume .resume-item h5 {
@@ -631,7 +642,7 @@ section .container {
 }
 .contact .info-box i.bx {
     font-size: 24px;
-    color: #890000;
+    color: #A71A1A;
     border-radius: 50%;
     padding: 14px;
     float: left;
@@ -663,7 +674,7 @@ section .container {
     transition: 0.3s;
 }
 .contact .info-box .social-links a:hover {
-    color: #890000;
+    color: #A71A1A;
 }
 .contact .php-email-form {
     padding: 30px;
