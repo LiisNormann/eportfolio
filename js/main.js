@@ -32,7 +32,7 @@
         })
     }
 
-    //Scrool with ofset on links with a class name .scrollto
+    //Scroll with offset on links with a class name .scrollto
     on('click', '#navbar .nav-link', function(e) {
         let section = select(this.hash)
         if (section) {
@@ -165,7 +165,7 @@
         height: '90vh'
     });
 
-    //Portfolio details slider
+    /*//Portfolio details slider
     new Swiper('.portfolio-details-slider', {
         speed: 400,
         loop: true,
@@ -178,7 +178,7 @@
             type: 'bullets',
             clickable: true
         }
-    });
+    });*/
 
 })()
 
@@ -186,7 +186,7 @@
 async function init () {
     const node = document.querySelector("#type-text")
     const request = new XMLHttpRequest();
-    request.open('GET', 'aboutme/aboutme.txt', false);
+    request.open('GET', 'components/aboutme/aboutme.txt', false);
     request.send();
     const par1 = request.responseText;
 
@@ -214,7 +214,6 @@ class TypeAsync extends HTMLSpanElement {
 
     async type (text) {
         for (let character of text) {
-            console.log(character)
             if(character == '|') {
                 this.innerHTML += '</br>';
             } else {
