@@ -1,5 +1,6 @@
 (function() {
     "use strict";
+    var exit = false;
 
     // Selector Helpers
     const select = (el, all = false) => {
@@ -183,7 +184,8 @@
 })()
 
 //About Me text animation
-async function init () {
+async function init() {
+    exit = true;
     const node = document.querySelector("#type-text")
     const request = new XMLHttpRequest();
     request.open('GET', 'components/aboutme/aboutme.txt', false);
@@ -192,6 +194,7 @@ async function init () {
 
     await sleep(1000)
     node.innerText = ""
+    exit = false;
     await node.type(par1)
 
     /*while (true) {
@@ -214,6 +217,10 @@ class TypeAsync extends HTMLSpanElement {
 
     async type (text) {
         for (let character of text) {
+            if(exit) {
+                this.innerHTML = "...";
+                return;
+            }
             if(character == '|') {
                 this.innerHTML += '</br>';
             } else {
@@ -233,5 +240,5 @@ class TypeAsync extends HTMLSpanElement {
 
 customElements.define('type-async', TypeAsync, { extends: 'span' })
 
-
-init()
+/*
+init()*/
