@@ -220,6 +220,12 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
+/* */
+/* Hide the link that should open and close the topnav on small screens */
+.navbar .icon {
+    display: none;
+}
+
 /* Mobile */
 .mobile-nav-toggle {
     color: #fff;
@@ -689,7 +695,7 @@ section .container {
     }
 }
 
-/*.portfolio-details .swiper-pagination {
+.portfolio-details .swiper-pagination {
     margin-top: 20px;
     position: relative;
 }
@@ -701,7 +707,12 @@ section .container {
 }
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #18d26e;
-}*/
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
 
 /* CONTACT */
 .contact .info-box {
